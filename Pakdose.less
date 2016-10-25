@@ -1,0 +1,113 @@
+/***
+ *    .-. .-. .-. . . .-. .-. .-. . . .-. .-.   .-. .-.   .-. .  . .-. .-. . .   .-. .  . .-. . . .-. .-.   
+ *    |   | | |-'  |  |(   |  |.. |-|  |  `-.   | | |-     |  |\/| |(  |-| |\|   |-| |\/| |-| |\| |-|  |    
+ *    `-' `-' '    `  ' ' `-' `-' ' `  '  `-'   `-' '     `-' '  ` ' ' ` ' ' `   ` ' '  ` ` ' ' ` ` '  '    
+ *                                                                                                           
+ *   Created on : Oct 24, 2016, 8:41:43 PM
+ *   Author     : Imran Amanat
+ */
+
+@color1: #122E56;
+@color2: #222428;
+@color3: #8ABD40;
+
+@textcolor1: #000;
+
+@z-dfc: 2px; //Footer: tags border-radius 
+
+section, footer{
+    position: relative;
+}
+
+
+header {
+    
+    width: 100%;
+    height: 60px;
+    display: block;
+    background-color: @color1;
+    z-index: 999;
+    
+    .container{
+        
+        .row{
+            img{
+                float: left;
+                width: 40px;
+                width: 126px;
+                margin-top: 6px;
+            }
+        }
+        
+    }
+
+}
+
+
+footer {
+    height: 300px;
+    width: 100%;
+    background-color: @color2;
+    
+    .container{
+        
+        div{
+
+            div{
+                
+                figure{
+                    margin-top: 21px;
+                    
+                    img{
+                        vertical-align: middle;
+                        width: 110px;
+                    }
+                }
+                
+                p.copyrights {
+                    margin: 6px 0px;
+                    color: @color3;
+                }
+                
+                nav{
+                    
+                    a{
+                        color: @color3;
+                    }
+                    
+                    margin: 6px 0px;
+                }
+            }
+        }
+
+        .tags-box{
+            line-height: 27px;
+            margin-top: 7px;
+            padding: 23px;
+            
+            span {
+                background-color: #FFFFFF;
+                padding: 4px 12px;
+                border-radius: @z-dfc;
+            }
+            
+            a {
+                background-color: #A2CA65;
+                padding: 4px 12px;
+                color: @color2;
+                border-radius: @z-dfc;
+            }
+        }
+    }
+}
+
+
+.newsLetter{
+    height: 200px;
+    background-color: @color3;
+}
+
+
+.coverView{
+    height: 400px;
+}
