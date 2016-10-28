@@ -7,6 +7,7 @@
  *   Author     : Imran Amanat
  */
 
+
 @color1: #122E56;
 @color2: #222428;
 @color3: #8ABD40;
@@ -14,11 +15,16 @@
 @textcolor1: #000;
 
 @z-dfc: 2px; //Footer: tags border-radius 
+@z-white: #ffffff; //Footer: White Color 
 
 section, footer{
     position: relative;
 }
 
+body{
+    font-size: 12px !important;
+    
+}
 
 header {
     
@@ -45,7 +51,8 @@ header {
 
 
 footer {
-    height: 300px;
+    
+    padding-bottom: 30px;
     width: 100%;
     background-color: @color2;
     
@@ -67,6 +74,7 @@ footer {
                 p.copyrights {
                     margin: 6px 0px;
                     color: @color3;
+                    padding-left: 10px;
                 }
                 
                 nav{
@@ -76,6 +84,7 @@ footer {
                     }
                     
                     margin: 6px 0px;
+                    padding-left: 10px;
                 }
             }
         }
@@ -86,28 +95,114 @@ footer {
             padding: 23px;
             
             span {
-                background-color: #FFFFFF;
+                background-color: @z-white;
                 padding: 4px 12px;
                 border-radius: @z-dfc;
             }
             
             a {
-                background-color: #A2CA65;
+                background-color: @color3;
                 padding: 4px 12px;
-                color: @color2;
+                color: @z-white;
                 border-radius: @z-dfc;
+                text-decoration: none;
+                margin-left: 1px;
             }
+        }
+        
+        div.ces-box{
+            
+            .ces-text{
+                background-color: #FFFFFF;
+                padding: 10px 38px;
+                font-size: 12px;
+                border-radius: 15px;
+                color: @color3;
+                margin: 10px;
+                margin-top: 31px;
+            }
+        }
+        
+        .dmca{
+            color: @z-white;
+            padding: 0px 10px;
+            margin-top: 35px;
         }
     }
 }
 
 
 .newsLetter{
-    height: 200px;
     background-color: @color3;
+    
+    div.container{
+        div.row{
+            div.mailimg{
+                figure{
+                    
+                    img.img-responsive{
+                        margin: 18px auto;
+                    }
+                }
+            }
+            
+            div.mailimgSend{
+                
+                p.smt{
+                    font-size: 20px;
+                    margin-top: 14px;
+                    margin-bottom: 0px;
+                    color: @z-white;
+                }
+                
+                p.smtt{
+                    font-size: 15px;
+                    color: @z-white;
+                }
+                
+                input.sminput{
+                    padding: 11px 12px;
+                    width: 50%;
+                    border-radius: 44px;
+                    height: 44px;
+                }
+                
+                button{
+                    padding: 11px;
+                    width: 10%;
+                    border-radius: 44px;
+                    height: 44px;
+                    border: hidden;
+                    background-color: @color1;
+                    color: @z-white;
+                }
+            }
+        }
+    }
 }
 
 
+
 .coverView{
-    height: 400px;
+    background-color: #FAFFF2;
+/*    background-image: url('');*/
+    background-position: bottom center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+    div{
+        
+        
+        div{
+            
+            
+            div{
+                
+                
+                figure{
+                    
+                }
+            }
+        }
+    }
 }
